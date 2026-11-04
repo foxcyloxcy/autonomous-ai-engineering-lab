@@ -5,7 +5,7 @@ Stages are acceptance-driven. They are not promises that unbuilt features exist.
 | Stage | Deliverables | Exit evidence | Status |
 |---|---|---|---|
 | M0: research/design | Source comparison, architecture, decisions, security model, test strategy | Reviewed primary sources, explicit scope/tradeoffs, reproducible first contract | Written |
-| M1: controlled repair | Pure-function fixture workflow, restricted execution, independent oracle, memory/logs, recovery, CLI and CI configuration | All automated tests pass; repeated controlled repairs and fresh replay; source unchanged | Implemented and locally validated; publication in progress |
+| M1: controlled repair | Pure-function fixture workflow, restricted execution, independent oracle, memory/logs, recovery, CLI and CI configuration | All automated tests pass; repeated controlled repairs and fresh replay; source unchanged | Published; local validation and remote CI passed on both Python versions |
 | M1.1: live local model | Run Ollama proposer with a chosen installed model and bounded config | Actual model/version and prompt recorded; repeated accepted repairs and failure cases; no hidden data in requests | Adapter exists; live inference pending |
 | M2: general repository execution | Qualify OpenHands SDK adapter, rootless container/microVM backend, trusted base revisions, dependency preparation | Escape/egress/secret/quota tests; baseline and repaired real-repo tests in isolated workers; no host fallbacks | Proposed |
 | M3: durable multi-agent orchestration | Separate research/planning/coding/experiment services; typed contracts; idempotent scheduling, leases, cancellation and crash replay | Fault injection including worker/controller loss; no duplicate consequential effects; role ablation study | Proposed |
@@ -16,16 +16,16 @@ Stages are acceptance-driven. They are not promises that unbuilt features exist.
 
 ## Immediate continuation
 
-1. Finish publication to the newly created dedicated repository and verify its
-   actual branch head. Do not reuse an unrelated repository as a workaround.
-2. Run the configured CI and inspect actual Actions logs; do not label config
-   existence as a passing CI run.
-3. Install/select a local model and validate live Ollama repair behavior against
+Publication and first remote CI verification are complete. The initial code
+commit is `28c27a86d983d669665bfa8ef19c77d77d8ad203`; passing Actions run
+`41743936706` covers both supported Python versions.
+
+1. Install/select a local model and validate live Ollama repair behavior against
    the existing deterministic baseline. Do not silently fall back to baseline
    after model failure.
-4. Increase task diversity before enlarging the agent system. Add negative and
+2. Increase task diversity before enlarging the agent system. Add negative and
    ambiguous tasks with independently written test oracles.
-5. Select and qualify a general sandbox backend before admitting broader Python
+3. Select and qualify a general sandbox backend before admitting broader Python
    or shell syntax; retain this small harness as a regression baseline.
 
 ## Preservation rule

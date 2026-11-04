@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "repository": "foxcyloxcy/autonomous-ai-engineering-lab",
+  "head_sha": "28c27a86d983d669665bfa8ef19c77d77d8ad203",
+  "run_id": 41743936706,
+  "run_url": "https://github.com/foxcyloxcy/autonomous-ai-engineering-lab/actions/runs/41743936706",
+  "status": "completed",
+  "conclusion": "success",
+  "updated_at": "2026-11-04T00:04:05Z",
+  "jobs": [
+    {
+      "id": 126292100741,
+      "name": "verify (3.11)",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check kernel isolation",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run adversarial and integration tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run controlled benchmark",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Preserve real execution evidence",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 126292101161,
+      "name": "verify (3.12)",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check kernel isolation",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run adversarial and integration tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run controlled benchmark",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Preserve real execution evidence",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "job_id": 126292100741,
+      "job_name": "verify (3.11)",
+      "doctor": {
+        "result": {
+          "blocked": {
+            "filesystem_read": true,
+            "filesystem_write": true,
+            "network": true,
+            "process": true,
+            "exec": true
+          }
+        },
+        "duration_seconds": 0.2578177449999828,
+        "exit_code": 0,
+        "sandbox": "seccomp-default-deny-v1"
+      },
+      "validation": {
+        "at": "2026-11-04T00:03:55.115395+00:00",
+        "python": "3.11.17",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "tests": 42,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "duration_seconds": 10.375989340000018,
+        "command": "python3 scripts/validate.py"
+      },
+      "benchmark": {
+        "schema_version": 1,
+        "benchmark": "ael-controlled-arithmetic-v1",
+        "at": "2026-11-04T00:03:57.395809+00:00",
+        "python": "3.11.17",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "provider": "deterministic-ast-baseline",
+        "live_model": false,
+        "runs": 3,
+        "verified": 3,
+        "median_seconds": 0.6890702489999967,
+        "results": [
+          {
+            "schema_version": 1,
+            "run_id": "d7fb8158ac0340459308a3457a51a2bd",
+            "task_id": "addition-v1",
+            "provider": "deterministic-ast-baseline",
+            "status": "verified",
+            "attempts": 1,
+            "artifact_path": "/home/runner/work/autonomous-ai-engineering-lab/autonomous-ai-engineering-lab/runs/benchmark/d7fb8158ac0340459308a3457a51a2bd",
+            "verification_report": "verification.json",
+            "duration_seconds": 0.7365980550000018,
+            "repetition": 0
+          },
+          {
+            "schema_version": 1,
+            "run_id": "781ee535dabe4ad9b1627809e17ebd1c",
+            "task_id": "product-v1",
+            "provider": "deterministic-ast-baseline",
+            "status": "verified",
+            "attempts": 2,
+            "artifact_path": "/home/runner/work/autonomous-ai-engineering-lab/autonomous-ai-engineering-lab/runs/benchmark/781ee535dabe4ad9b1627809e17ebd1c",
+            "verification_report": "verification.json",
+            "duration_seconds": 0.6736939609999979,
+            "repetition": 0
+          },
+          {
+            "schema_version": 1,
+            "run_id": "e03dc0d9960e4cabb9749a1ed840106e",
+            "task_id": "affine-v1",
+            "provider": "deterministic-ast-baseline",
+            "status": "verified",
+            "attempts": 4,
+            "artifact_path": "/home/runner/work/autonomous-ai-engineering-lab/autonomous-ai-engineering-lab/runs/benchmark/e03dc0d9960e4cabb9749a1ed840106e",
+            "verification_report": "verification.json",
+            "duration_seconds": 0.6890702489999967,
+            "repetition": 0
+          }
+        ]
+      }
+    },
+    {
+      "job_id": 126292101161,
+      "job_name": "verify (3.12)",
+      "doctor": {
+        "result": {
+          "blocked": {
+            "filesystem_read": true,
+            "filesystem_write": true,
+            "network": true,
+            "process": true,
+            "exec": true
+          }
+        },
+        "duration_seconds": 0.16139514700000035,
+        "exit_code": 0,
+        "sandbox": "seccomp-default-deny-v1"
+      },
+      "validation": {
+        "at": "2026-11-04T00:03:58.737662+00:00",
+        "python": "3.12.15",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "tests": 42,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "duration_seconds": 13.024929679000003,
+        "command": "python3 scripts/validate.py"
+      },
+      "benchmark": {
+        "schema_version": 1,
+        "benchmark": "ael-controlled-arithmetic-v1",
+        "at": "2026-11-04T00:04:01.719378+00:00",
+        "python": "3.12.15",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "provider": "deterministic-ast-baseline",
+        "live_model": false,
+        "runs": 3,
+        "verified": 3,
+        "median_seconds": 0.9152830079999958,
+        "results": [
+          {
+            "schema_version": 1,
+            "run_id": "9f43271cb0f54cb0a5aace3a3193bd12",
+            "task_id": "addition-v1",
+            "provider": "deterministic-ast-baseline",
+            "status": "verified",
+            "attempts": 1,
+            "artifact_path": "/home/runner/work/autonomous-ai-engineering-lab/autonomous-ai-engineering-lab/runs/benchmark/9f43271cb0f54cb0a5aace3a3193bd12",
+            "verification_report": "verification.json",
+            "duration_seconds": 0.9672935169999946,
+            "repetition": 0
+          },
+          {
+            "schema_version": 1,
+            "run_id": "1986f305080e4d64aa3f36c8e5fe058e",
+            "task_id": "product-v1",
+            "provider": "deterministic-ast-baseline",
+            "status": "verified",
+            "attempts": 2,
+            "artifact_path": "/home/runner/work/autonomous-ai-engineering-lab/autonomous-ai-engineering-lab/runs/benchmark/1986f305080e4d64aa3f36c8e5fe058e",
+            "verification_report": "verification.json",
+            "duration_seconds": 0.9152830079999958,
+            "repetition": 0
+          },
+          {
+            "schema_version": 1,
+            "run_id": "f416e44ca9ad4feea00223c60b0e7dc5",
+            "task_id": "affine-v1",
+            "provider": "deterministic-ast-baseline",
+            "status": "verified",
+            "attempts": 4,
+            "artifact_path": "/home/runner/work/autonomous-ai-engineering-lab/autonomous-ai-engineering-lab/runs/benchmark/f416e44ca9ad4feea00223c60b0e7dc5",
+            "verification_report": "verification.json",
+            "duration_seconds": 0.9140521369999988,
+            "repetition": 0
+          }
+        ]
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 13282343772,
+      "name": "ael-evidence-python-3.11",
+      "size_in_bytes": 42219,
+      "digest": "sha256:615462415adaac1b603b9bfc023445daa7e9b90bd61b5a6d3c20f738cefda893",
+      "expires_at": "2026-11-18T00:03:57Z"
+    },
+    {
+      "id": 13282287637,
+      "name": "ael-evidence-python-3.12",
+      "size_in_bytes": 42154,
+      "digest": "sha256:9a07aa7d58b5d26eb418c927f907d53862f2f9d42fb7c88379721dd7fd1521a5",
+      "expires_at": "2026-11-18T00:04:01Z"
+    }
+  ],
+  "provenance": "Run and job metadata fetched from GitHub API; observations parsed from the decoded job logs. All repairs use the deterministic baseline."
+}

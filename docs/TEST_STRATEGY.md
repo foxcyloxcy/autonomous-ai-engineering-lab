@@ -58,8 +58,9 @@ verifier and persistent SQLite store. Transport-only model tests are labeled.
 
 CI runs the same suite and a one-repeat controlled benchmark on Ubuntu with
 Python 3.11 and 3.12. The workflow has read-only repository permissions and no
-credentials passed into test workers. CI is configured, **not remotely run**
-until GitHub publication succeeds.
+credentials passed into test workers. The first published implementation passed this workflow on Python 3.11.17
+and 3.12.15; each job passed all 42 tests and 3/3 benchmark tasks. See GitHub
+run `41743936706` and `evidence/github-ci/41743936706.json` for actual evidence.
 
 ## Benchmark methodology
 
