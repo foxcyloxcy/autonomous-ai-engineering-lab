@@ -1,0 +1,13 @@
+{
+  "duration_seconds": 0.06643636700005118,
+  "exit_code": 0,
+  "result": {
+    "errors": 0,
+    "failures": 1,
+    "output": "test_positive (ael_public_tests.TestCombine.test_positive) ... FAIL\ntest_zero (ael_public_tests.TestCombine.test_zero) ... ok\n\n======================================================================\nFAIL: test_positive (ael_public_tests.TestCombine.test_positive)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"test_math_ops.py\", line 7, in test_positive\nAssertionError: 7 != 12\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nFAILED (failures=1)\n",
+    "passed": false,
+    "skipped": 0,
+    "tests": 2
+  },
+  "sandbox": "seccomp-default-deny-v1"
+}

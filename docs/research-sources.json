@@ -1,0 +1,30 @@
+{
+  "retrieved_on": "2026-11-04",
+  "sources": [
+    {
+      "repository": "SakanaAI/AI-Scientist",
+      "sha": "1de1dbc1f4ee2c5f61e9c94348d55eb51d7fa2eb",
+      "committed_at": "2025-12-19T07:46:21Z",
+      "url": "https://github.com/SakanaAI/AI-Scientist/commit/1de1dbc1f4ee2c5f61e9c94348d55eb51d7fa2eb"
+    },
+    {
+      "repository": "OpenHands/software-agent-sdk",
+      "sha": "c76d30534b549616266ea737fdbffb2803561dc9",
+      "committed_at": "2026-11-03T14:41:54Z",
+      "url": "https://github.com/OpenHands/software-agent-sdk/commit/c76d30534b549616266ea737fdbffb2803561dc9"
+    },
+    {
+      "repository": "openai/mle-bench",
+      "sha": "507f92e1138bb6e40dac5c6ee7a6758e6424bf97",
+      "committed_at": "2026-04-24T17:33:44Z",
+      "url": "https://github.com/openai/mle-bench/commit/507f92e1138bb6e40dac5c6ee7a6758e6424bf97"
+    },
+    {
+      "repository": "SWE-bench/SWE-bench",
+      "sha": "02e7a74ffd0b707aab73d203fe87bdc7c76afc8e",
+      "committed_at": "2026-09-02T01:50:34Z",
+      "url": "https://github.com/SWE-bench/SWE-bench/commit/02e7a74ffd0b707aab73d203fe87bdc7c76afc8e"
+    }
+  ],
+  "notes": "Commit metadata retrieved through connected GitHub. Repository heads may subsequently move."
+}

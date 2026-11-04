@@ -1,0 +1,56 @@
+[
+  {
+    "run_id": "92d019df4ccf4d98acd746758ced9ba1",
+    "task_id": "addition-v1",
+    "repetition": 0,
+    "bundle": "benchmark-runs/92d019df4ccf4d98acd746758ced9ba1"
+  },
+  {
+    "run_id": "f651afec90494ad3b519666aaa96c533",
+    "task_id": "product-v1",
+    "repetition": 0,
+    "bundle": "benchmark-runs/f651afec90494ad3b519666aaa96c533"
+  },
+  {
+    "run_id": "e0073ab3ce7e40b39f2440ea47de9bbc",
+    "task_id": "affine-v1",
+    "repetition": 0,
+    "bundle": "benchmark-runs/e0073ab3ce7e40b39f2440ea47de9bbc"
+  },
+  {
+    "run_id": "283b3b15999445ab886d2fa316b7a946",
+    "task_id": "addition-v1",
+    "repetition": 1,
+    "bundle": "benchmark-runs/283b3b15999445ab886d2fa316b7a946"
+  },
+  {
+    "run_id": "ec23c2190f1041449854c304cda0454f",
+    "task_id": "product-v1",
+    "repetition": 1,
+    "bundle": "benchmark-runs/ec23c2190f1041449854c304cda0454f"
+  },
+  {
+    "run_id": "415dc8be83ab4e55b46cb89838a66664",
+    "task_id": "affine-v1",
+    "repetition": 1,
+    "bundle": "benchmark-runs/415dc8be83ab4e55b46cb89838a66664"
+  },
+  {
+    "run_id": "e3f49e5d690f454591a746630849ccac",
+    "task_id": "addition-v1",
+    "repetition": 2,
+    "bundle": "benchmark-runs/e3f49e5d690f454591a746630849ccac"
+  },
+  {
+    "run_id": "028ec3689e104616ad8321593d100956",
+    "task_id": "product-v1",
+    "repetition": 2,
+    "bundle": "benchmark-runs/028ec3689e104616ad8321593d100956"
+  },
+  {
+    "run_id": "9b3c322a41f94a2692f0adf10ba97a9f",
+    "task_id": "affine-v1",
+    "repetition": 2,
+    "bundle": "benchmark-runs/9b3c322a41f94a2692f0adf10ba97a9f"
+  }
+]

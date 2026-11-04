@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "benchmark": "ael-controlled-arithmetic-v1",
+  "at": "2026-11-03T22:02:30.397529+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "provider": "deterministic-ast-baseline",
+  "live_model": false,
+  "runs": 9,
+  "verified": 9,
+  "median_seconds": 1.1306367170000158,
+  "results": [
+    {
+      "schema_version": 1,
+      "run_id": "92d019df4ccf4d98acd746758ced9ba1",
+      "task_id": "addition-v1",
+      "provider": "deterministic-ast-baseline",
+      "status": "verified",
+      "attempts": 1,
+      "artifact_path": "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/final-benchmark/92d019df4ccf4d98acd746758ced9ba1",
+      "verification_report": "verification.json",
+      "duration_seconds": 1.2469598860000133,
+      "repetition": 0
+    },
+    {
+      "schema_version": 1,
+      "run_id": "f651afec90494ad3b519666aaa96c533",
+      "task_id": "product-v1",
+      "provider": "deterministic-ast-baseline",
+      "status": "verified",
+      "attempts": 2,
+      "artifact_path": "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/final-benchmark/f651afec90494ad3b519666aaa96c533",
+      "verification_report": "verification.json",
+      "duration_seconds": 1.0669725459999881,
+      "repetition": 0
+    },
+    {
+      "schema_version": 1,
+      "run_id": "e0073ab3ce7e40b39f2440ea47de9bbc",
+      "task_id": "affine-v1",
+      "provider": "deterministic-ast-baseline",
+      "status": "verified",
+      "attempts": 4,
+      "artifact_path": "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/final-benchmark/e0073ab3ce7e40b39f2440ea47de9bbc",
+      "verification_report": "verification.json",
+      "duration_seconds": 1.1278124630000548,
+      "repetition": 0
+    },
+    {
+      "schema_version": 1,
+      "run_id": "283b3b15999445ab886d2fa316b7a946",
+      "task_id": "addition-v1",
+      "provider": "deterministic-ast-baseline",
+      "status": "verified",
+      "attempts": 1,
+      "artifact_path": "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/final-benchmark/283b3b15999445ab886d2fa316b7a946",
+      "verification_report": "verification.json",
+      "duration_seconds": 1.209673088000045,
+      "repetition": 1
+    },
+    {
+      "schema_version": 1,
+      "run_id": "ec23c2190f1041449854c304cda0454f",
+      "task_id": "product-v1",
+      "provider": "deterministic-ast-baseline",
+      "status": "verified",
+      "attempts": 2,
+      "artifact_path": "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/final-benchmark/ec23c2190f1041449854c304cda0454f",
+      "verification_report": "verification.json",
+      "duration_seconds": 1.1216967299999396,
+      "repetition": 1
+    },
+    {
+      "schema_version": 1,
+      "run_id": "415dc8be83ab4e55b46cb89838a66664",
+      "task_id": "affine-v1",
+      "provider": "deterministic-ast-baseline",
+      "status": "verified",
+      "attempts": 4,
+      "artifact_path": "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/final-benchmark/415dc8be83ab4e55b46cb89838a66664",
+      "verification_report": "verification.json",
+      "duration_seconds": 1.1403682780000963,
+      "repetition": 1
+    },
+    {
+      "schema_version": 1,
+      "run_id": "e3f49e5d690f454591a746630849ccac",
+      "task_id": "addition-v1",
+      "provider": "deterministic-ast-baseline",
+      "status": "verified",
+      "attempts": 1,
+      "artifact_path": "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/final-benchmark/e3f49e5d690f454591a746630849ccac",
+      "verification_report": "verification.json",
+      "duration_seconds": 1.160072664999916,
+      "repetition": 2
+    },
+    {
+      "schema_version": 1,
+      "run_id": "028ec3689e104616ad8321593d100956",
+      "task_id": "product-v1",
+      "provider": "deterministic-ast-baseline",
+      "status": "verified",
+      "attempts": 2,
+      "artifact_path": "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/final-benchmark/028ec3689e104616ad8321593d100956",
+      "verification_report": "verification.json",
+      "duration_seconds": 1.1306367170000158,
+      "repetition": 2
+    },
+    {
+      "schema_version": 1,
+      "run_id": "9b3c322a41f94a2692f0adf10ba97a9f",
+      "task_id": "affine-v1",
+      "provider": "deterministic-ast-baseline",
+      "status": "verified",
+      "attempts": 4,
+      "artifact_path": "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/final-benchmark/9b3c322a41f94a2692f0adf10ba97a9f",
+      "verification_report": "verification.json",
+      "duration_seconds": 1.1200659580001684,
+      "repetition": 2
+    }
+  ]
+}

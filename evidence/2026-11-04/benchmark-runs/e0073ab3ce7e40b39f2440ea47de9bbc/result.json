@@ -1,0 +1,11 @@
+{
+  "artifact_path": "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/final-benchmark/e0073ab3ce7e40b39f2440ea47de9bbc",
+  "attempts": 4,
+  "duration_seconds": 1.1278124630000548,
+  "provider": "deterministic-ast-baseline",
+  "run_id": "e0073ab3ce7e40b39f2440ea47de9bbc",
+  "schema_version": 1,
+  "status": "verified",
+  "task_id": "affine-v1",
+  "verification_report": "verification.json"
+}

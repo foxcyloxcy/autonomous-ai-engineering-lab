@@ -1,0 +1,206 @@
+{
+  "baseline": {
+    "duration_seconds": 0.0549155610001435,
+    "exit_code": 0,
+    "result": {
+      "errors": 0,
+      "failures": 1,
+      "output": "test_positive (ael_public_tests.TestCombine.test_positive) ... FAIL\ntest_zero (ael_public_tests.TestCombine.test_zero) ... ok\n\n======================================================================\nFAIL: test_positive (ael_public_tests.TestCombine.test_positive)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"test_math_ops.py\", line 7, in test_positive\nAssertionError: -2 != 10\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nFAILED (failures=1)\n",
+      "passed": false,
+      "skipped": 0,
+      "tests": 2
+    },
+    "sandbox": "seccomp-default-deny-v1"
+  },
+  "gates": {
+    "baseline_fails": true,
+    "oracle_detects_original_bug": true,
+    "oracle_passes": true,
+    "passing_cases_preserved": true,
+    "public_replays_pass": true
+  },
+  "inputs": {
+    "candidate": {
+      "math_ops.py": "5017c389c9d77f4243b7a493bf492541383dfab4fc0cd7bfe03ce753208e3888",
+      "task.json": "8def64242aac90123a658d45d82514db49b7cb1a24032caed39ac244ea734e33",
+      "test_math_ops.py": "91b2fba3b83e923b29b069f699dcd415091702319595b0167b8989c5f3f161d5"
+    },
+    "oracle": "3d646e8a5108de62ede389a6cc963dec35d7eb55940009e996bf5d54b994de37",
+    "original": {
+      "math_ops.py": "a80f36c4738dd7bc3fc424ca006e08342ce9c92f722b1f3f8e1250ae0d1d367c",
+      "task.json": "8def64242aac90123a658d45d82514db49b7cb1a24032caed39ac244ea734e33",
+      "test_math_ops.py": "91b2fba3b83e923b29b069f699dcd415091702319595b0167b8989c5f3f161d5"
+    }
+  },
+  "oracle_checks": [
+    {
+      "after": {
+        "execution": {
+          "duration_seconds": 0.056449096999813264,
+          "exit_code": 0,
+          "result": {
+            "value": 0
+          },
+          "sandbox": "seccomp-default-deny-v1"
+        },
+        "passed": true,
+        "value": 0
+      },
+      "args": [
+        0,
+        0
+      ],
+      "before": {
+        "execution": {
+          "duration_seconds": 0.06527604999996584,
+          "exit_code": 0,
+          "result": {
+            "value": 0
+          },
+          "sandbox": "seccomp-default-deny-v1"
+        },
+        "passed": true,
+        "value": 0
+      },
+      "expected": 0
+    },
+    {
+      "after": {
+        "execution": {
+          "duration_seconds": 0.05836219599996184,
+          "exit_code": 0,
+          "result": {
+            "value": 8
+          },
+          "sandbox": "seccomp-default-deny-v1"
+        },
+        "passed": true,
+        "value": 8
+      },
+      "args": [
+        -3,
+        7
+      ],
+      "before": {
+        "execution": {
+          "duration_seconds": 0.06585132600002908,
+          "exit_code": 0,
+          "result": {
+            "value": -20
+          },
+          "sandbox": "seccomp-default-deny-v1"
+        },
+        "passed": false,
+        "value": -20
+      },
+      "expected": 8
+    },
+    {
+      "after": {
+        "execution": {
+          "duration_seconds": 0.06173483199995644,
+          "exit_code": 0,
+          "result": {
+            "value": 7.0
+          },
+          "sandbox": "seccomp-default-deny-v1"
+        },
+        "passed": true,
+        "value": 7.0
+      },
+      "args": [
+        1.5,
+        2
+      ],
+      "before": {
+        "execution": {
+          "duration_seconds": 0.056410013000004255,
+          "exit_code": 0,
+          "result": {
+            "value": -1.0
+          },
+          "sandbox": "seccomp-default-deny-v1"
+        },
+        "passed": false,
+        "value": -1.0
+      },
+      "expected": 7
+    },
+    {
+      "after": {
+        "execution": {
+          "duration_seconds": 0.05478280400006952,
+          "exit_code": 0,
+          "result": {
+            "value": 14
+          },
+          "sandbox": "seccomp-default-deny-v1"
+        },
+        "passed": true,
+        "value": 14
+      },
+      "args": [
+        8,
+        -1
+      ],
+      "before": {
+        "execution": {
+          "duration_seconds": 0.05549844799998027,
+          "exit_code": 0,
+          "result": {
+            "value": 18
+          },
+          "sandbox": "seccomp-default-deny-v1"
+        },
+        "passed": false,
+        "value": 18
+      },
+      "expected": 14
+    }
+  ],
+  "public_replays": [
+    {
+      "duration_seconds": 0.060719004000020504,
+      "exit_code": 0,
+      "result": {
+        "errors": 0,
+        "failures": 0,
+        "output": "test_positive (ael_public_tests.TestCombine.test_positive) ... ok\ntest_zero (ael_public_tests.TestCombine.test_zero) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "passed": true,
+        "skipped": 0,
+        "tests": 2
+      },
+      "sandbox": "seccomp-default-deny-v1"
+    },
+    {
+      "duration_seconds": 0.06645425300007446,
+      "exit_code": 0,
+      "result": {
+        "errors": 0,
+        "failures": 0,
+        "output": "test_positive (ael_public_tests.TestCombine.test_positive) ... ok\ntest_zero (ael_public_tests.TestCombine.test_zero) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "passed": true,
+        "skipped": 0,
+        "tests": 2
+      },
+      "sandbox": "seccomp-default-deny-v1"
+    }
+  ],
+  "sandbox_preflight": {
+    "duration_seconds": 0.05611536599985811,
+    "exit_code": 0,
+    "result": {
+      "blocked": {
+        "exec": true,
+        "filesystem_read": true,
+        "filesystem_write": true,
+        "network": true,
+        "process": true
+      }
+    },
+    "sandbox": "seccomp-default-deny-v1"
+  },
+  "schema_version": 1,
+  "status": "verified",
+  "verifier": "ael-independent-process-v1"
+}

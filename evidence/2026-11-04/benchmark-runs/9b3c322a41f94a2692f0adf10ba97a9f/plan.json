@@ -1,0 +1,11 @@
+{
+  "analysis": "Known assertion failure reproduced. Search bounded source-only repairs; tests are immutable.",
+  "approval": "artifact-only; consequential capabilities absent",
+  "provider": "deterministic-ast-baseline",
+  "steps": [
+    "propose",
+    "validate policy/preimage",
+    "test isolated candidate",
+    "independent replay and oracle"
+  ]
+}

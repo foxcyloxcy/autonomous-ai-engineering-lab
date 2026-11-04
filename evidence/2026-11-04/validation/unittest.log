@@ -1,0 +1,47 @@
+test_persistent_events_and_hash_tampering (test_lab.MemoryTests.test_persistent_events_and_hash_tampering) ... ok
+test_recover_interrupted_run (test_lab.MemoryTests.test_recover_interrupted_run) ... ok
+test_unknown_recovery_rejected (test_lab.MemoryTests.test_unknown_recovery_rejected) ... ok
+test_admits_pure_numeric_functions (test_lab.PolicyTests.test_admits_pure_numeric_functions) ... ok
+test_consequential_actions_denied (test_lab.PolicyTests.test_consequential_actions_denied) ... ok
+test_denies_dangerous_python (test_lab.PolicyTests.test_denies_dangerous_python) ... ok
+test_extra_files_denied (test_lab.PolicyTests.test_extra_files_denied) ... ok
+test_oversized_input_denied (test_lab.PolicyTests.test_oversized_input_denied) ... ok
+test_path_traversal_proposal_denied (test_lab.PolicyTests.test_path_traversal_proposal_denied) ... ok
+test_stale_preimage_denied (test_lab.PolicyTests.test_stale_preimage_denied) ... ok
+test_symlink_denied (test_lab.PolicyTests.test_symlink_denied) ... ok
+test_test_tampering_proposal_denied (test_lab.PolicyTests.test_test_tampering_proposal_denied) ... ok
+test_local_model_transport_contract (test_lab.ProposerTests.test_local_model_transport_contract) ... ok
+test_malformed_model_response (test_lab.ProposerTests.test_malformed_model_response) ... ok
+test_model_cannot_inject_shell (test_lab.ProposerTests.test_model_cannot_inject_shell) ... ok
+test_mutation_is_deterministic (test_lab.ProposerTests.test_mutation_is_deterministic) ... ok
+test_actual_unittest_failure (test_lab.SandboxTests.test_actual_unittest_failure) ... ok
+test_arithmetic_runs (test_lab.SandboxTests.test_arithmetic_runs) ... ok
+test_environment_has_no_host_secret (test_lab.SandboxTests.test_environment_has_no_host_secret) ... ok
+test_input_is_bounded (test_lab.SandboxTests.test_input_is_bounded) ... ok
+test_memory_exhaustion_fails (test_lab.SandboxTests.test_memory_exhaustion_fails) ... ok
+test_missing_seccomp_library_aborts_worker (test_lab.SandboxTests.test_missing_seccomp_library_aborts_worker) ... ok
+test_no_tests_does_not_pass (test_lab.SandboxTests.test_no_tests_does_not_pass) ... ok
+test_output_is_bounded (test_lab.SandboxTests.test_output_is_bounded) ... ok
+test_process_exit_cannot_claim_success (test_lab.SandboxTests.test_process_exit_cannot_claim_success) ... ok
+test_read_of_host_secret_denied (test_lab.SandboxTests.test_read_of_host_secret_denied) ... ok
+test_real_syscall_confinement (test_lab.SandboxTests.test_real_syscall_confinement) ... ok
+test_wall_clock_timeout (test_lab.SandboxTests.test_wall_clock_timeout) ... ok
+test_write_denied (test_lab.SandboxTests.test_write_denied) ... ok
+test_zero_deadline_stops_execution (test_lab.SandboxTests.test_zero_deadline_stops_execution) ... ok
+test_artifact_tampering_detected (test_lab.WorkflowTests.test_artifact_tampering_detected) ... ok
+test_budget_exhaustion_rejects_and_logs (test_lab.WorkflowTests.test_budget_exhaustion_rejects_and_logs) ... ok
+test_invalid_proposal_recovers_to_next_attempt (test_lab.WorkflowTests.test_invalid_proposal_recovers_to_next_attempt) ... ok
+test_manifest_path_traversal_rejected (test_lab.WorkflowTests.test_manifest_path_traversal_rejected) ... ok
+test_oracle_change_detected (test_lab.WorkflowTests.test_oracle_change_detected) ... ok
+test_output_cannot_be_inside_input (test_lab.WorkflowTests.test_output_cannot_be_inside_input) ... ok
+test_passing_baseline_is_not_a_repair (test_lab.WorkflowTests.test_passing_baseline_is_not_a_repair) ... ok
+test_protected_test_change_rejected_even_with_new_binding (test_lab.WorkflowTests.test_protected_test_change_rejected_even_with_new_binding) ... ok
+test_provider_exception_persists_failure (test_lab.WorkflowTests.test_provider_exception_persists_failure) ... ok
+test_retry_links_unsuccessful_run (test_lab.WorkflowTests.test_retry_links_unsuccessful_run) ... ok
+test_three_real_repairs_and_independent_replay (test_lab.WorkflowTests.test_three_real_repairs_and_independent_replay) ... ok
+test_wrong_candidate_rejected_by_withheld_cases (test_lab.WorkflowTests.test_wrong_candidate_rejected_by_withheld_cases) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 18.122s
+
+OK

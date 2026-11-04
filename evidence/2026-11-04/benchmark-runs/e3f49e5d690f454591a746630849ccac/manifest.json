@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "sha256": {
+    "attempts/001.json": "d2d85c5f5ada01704430fd07fc8ca64bb4e9b6c1b0bcc3d5f7ff37b70dd4c991",
+    "baseline.json": "1e1c97ef47b04314a4c869238b462fdee7748407570748d81fcf7df72cc1a274",
+    "binding.json": "778503c0139c7f24c3f1fa855ade917a587174e7040d265a190f8ad8ad98f833",
+    "candidate/math_ops.py": "a59319c784e80f713fa37802a35df845697005ea879e4f71ad134a57ab126c37",
+    "candidate/task.json": "3ddc9673042af43586e05ac5f025149b28fcc9addc895646331cdee5973b94d3",
+    "candidate/test_math_ops.py": "981f3139946da1c1c555689e4ca6910c6bfd391b34c38f4aeb28ee10db527827",
+    "events.jsonl": "2ed6b674136bab07d39a450806c2099d6bf16f7f670f264391e2a05143a25da5",
+    "original/math_ops.py": "dc634b043e9988c68602f2098e823bbf1674bf1c7c26c070b4607a427b2b04c0",
+    "original/task.json": "3ddc9673042af43586e05ac5f025149b28fcc9addc895646331cdee5973b94d3",
+    "original/test_math_ops.py": "981f3139946da1c1c555689e4ca6910c6bfd391b34c38f4aeb28ee10db527827",
+    "patch.diff": "a252e3a9acb2d8904c6e9f870396fac081e2b816ec3ff15a55cf6dd297aca0b9",
+    "plan.json": "cc25b50f9d509eb258ed87821bdceef8810330aef14b9bc5e2adae6f4ca26db9",
+    "proposal.json": "5f2be183c4c4864f87b10c10b3a1f0485eb5727e447d467f4ee428829836e3c8",
+    "result.json": "99d2478104e21d255dd45cc9be43e3adcc1252c60a861dc3428fcb88af23692d",
+    "runtime.json": "dda5a1a8a1719cc8f01970664dc323a6e560c465b06ccd0f032cadb207dd637d",
+    "sandbox.json": "c3cbcd078412e2718a8a53468245d3deea8c3677dae2fbc15ba33d617581614c",
+    "verification.json": "2b6f89ea8210382ba7193542752c95adf2c0e8da47ef8ad814237e4374ed69e8"
+  }
+}

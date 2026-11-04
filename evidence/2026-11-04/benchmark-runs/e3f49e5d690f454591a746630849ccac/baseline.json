@@ -1,0 +1,13 @@
+{
+  "duration_seconds": 0.054502826000089044,
+  "exit_code": 0,
+  "result": {
+    "errors": 0,
+    "failures": 2,
+    "output": "test_negative (ael_public_tests.TestCombine.test_negative) ... FAIL\ntest_positive (ael_public_tests.TestCombine.test_positive) ... FAIL\ntest_zero (ael_public_tests.TestCombine.test_zero) ... ok\n\n======================================================================\nFAIL: test_negative (ael_public_tests.TestCombine.test_negative)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"test_math_ops.py\", line 13, in test_negative\nAssertionError: -2 != -6\n\n======================================================================\nFAIL: test_positive (ael_public_tests.TestCombine.test_positive)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"test_math_ops.py\", line 7, in test_positive\nAssertionError: -1 != 5\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nFAILED (failures=2)\n",
+    "passed": false,
+    "skipped": 0,
+    "tests": 3
+  },
+  "sandbox": "seccomp-default-deny-v1"
+}

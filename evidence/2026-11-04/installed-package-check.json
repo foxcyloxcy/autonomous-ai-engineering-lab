@@ -1,0 +1,33 @@
+{
+  "wheel_sha256": "80bb662f66a38c25e889c2546bd0db3ed3e27dcafc0b1146c6e581ca36ddd156",
+  "reports": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "ael",
+        "doctor"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"result\": {\n    \"blocked\": {\n      \"filesystem_read\": true,\n      \"filesystem_write\": true,\n      \"network\": true,\n      \"process\": true,\n      \"exec\": true\n    }\n  },\n  \"duration_seconds\": 0.05673205600010078,\n  \"exit_code\": 0,\n  \"sandbox\": \"seccomp-default-deny-v1\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "ael",
+        "run",
+        "--repo",
+        "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/fixtures/addition/repo",
+        "--oracle",
+        "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/fixtures/addition/oracle.json",
+        "--output",
+        "/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/installed-smoke"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schema_version\": 1,\n  \"run_id\": \"156811c3d5bd473ebb4876e6cedbca81\",\n  \"task_id\": \"addition-v1\",\n  \"provider\": \"deterministic-ast-baseline\",\n  \"status\": \"verified\",\n  \"attempts\": 1,\n  \"artifact_path\": \"/workspace/scratch/20309592a8e4/autonomous-ai-engineering-lab/runs/installed-smoke/156811c3d5bd473ebb4876e6cedbca81\",\n  \"verification_report\": \"verification.json\",\n  \"duration_seconds\": 1.3196029810001164\n}\n",
+      "stderr": ""
+    }
+  ]
+}

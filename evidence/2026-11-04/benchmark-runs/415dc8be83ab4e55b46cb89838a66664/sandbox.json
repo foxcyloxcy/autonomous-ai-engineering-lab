@@ -1,0 +1,14 @@
+{
+  "duration_seconds": 0.06389976200011915,
+  "exit_code": 0,
+  "result": {
+    "blocked": {
+      "exec": true,
+      "filesystem_read": true,
+      "filesystem_write": true,
+      "network": true,
+      "process": true
+    }
+  },
+  "sandbox": "seccomp-default-deny-v1"
+}

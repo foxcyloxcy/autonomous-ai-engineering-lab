@@ -1,0 +1,23 @@
+{
+  "index": 1,
+  "proposal": {
+    "before_sha256": "a59319c784e80f713fa37802a35df845697005ea879e4f71ad134a57ab126c37",
+    "path": "math_ops.py",
+    "provider": "deterministic-ast-baseline",
+    "rationale": "Investigate Add -> Sub at line 2; select only on public test evidence.",
+    "replacement": "def combine(a, b):\n    return a - b\n"
+  },
+  "test": {
+    "duration_seconds": 0.054546492000099533,
+    "exit_code": 0,
+    "result": {
+      "errors": 0,
+      "failures": 1,
+      "output": "test_positive (ael_public_tests.TestCombine.test_positive) ... FAIL\ntest_zero (ael_public_tests.TestCombine.test_zero) ... ok\n\n======================================================================\nFAIL: test_positive (ael_public_tests.TestCombine.test_positive)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"test_math_ops.py\", line 7, in test_positive\nAssertionError: -1 != 12\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nFAILED (failures=1)\n",
+      "passed": false,
+      "skipped": 0,
+      "tests": 2
+    },
+    "sandbox": "seccomp-default-deny-v1"
+  }
+}

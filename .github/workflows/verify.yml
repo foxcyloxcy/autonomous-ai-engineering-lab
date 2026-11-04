@@ -1,0 +1,35 @@
+name: controlled-verification
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4 inspected 2026-11-04
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Check kernel isolation
+        run: python -m ael doctor
+      - name: Run adversarial and integration tests
+        run: python scripts/validate.py
+      - name: Run controlled benchmark
+        run: python scripts/benchmark.py --repetitions 1
+      - name: Preserve real execution evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: ael-evidence-python-${{ matrix.python }}
+          path: |
+            runs/validation/
+            runs/benchmark/
+          retention-days: 14

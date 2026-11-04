@@ -1,0 +1,23 @@
+{
+  "index": 1,
+  "proposal": {
+    "before_sha256": "dc634b043e9988c68602f2098e823bbf1674bf1c7c26c070b4607a427b2b04c0",
+    "path": "math_ops.py",
+    "provider": "deterministic-ast-baseline",
+    "rationale": "Investigate Sub -> Add at line 2; select only on public test evidence.",
+    "replacement": "def combine(a, b):\n    return a + b\n"
+  },
+  "test": {
+    "duration_seconds": 0.05333804399992914,
+    "exit_code": 0,
+    "result": {
+      "errors": 0,
+      "failures": 0,
+      "output": "test_negative (ael_public_tests.TestCombine.test_negative) ... ok\ntest_positive (ael_public_tests.TestCombine.test_positive) ... ok\ntest_zero (ael_public_tests.TestCombine.test_zero) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n",
+      "passed": true,
+      "skipped": 0,
+      "tests": 3
+    },
+    "sandbox": "seccomp-default-deny-v1"
+  }
+}

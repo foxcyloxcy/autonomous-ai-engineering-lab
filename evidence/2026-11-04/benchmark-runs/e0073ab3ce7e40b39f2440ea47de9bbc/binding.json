@@ -1,0 +1,13 @@
+{
+  "candidate": {
+    "math_ops.py": "5017c389c9d77f4243b7a493bf492541383dfab4fc0cd7bfe03ce753208e3888",
+    "task.json": "8def64242aac90123a658d45d82514db49b7cb1a24032caed39ac244ea734e33",
+    "test_math_ops.py": "91b2fba3b83e923b29b069f699dcd415091702319595b0167b8989c5f3f161d5"
+  },
+  "oracle": "3d646e8a5108de62ede389a6cc963dec35d7eb55940009e996bf5d54b994de37",
+  "original": {
+    "math_ops.py": "a80f36c4738dd7bc3fc424ca006e08342ce9c92f722b1f3f8e1250ae0d1d367c",
+    "task.json": "8def64242aac90123a658d45d82514db49b7cb1a24032caed39ac244ea734e33",
+    "test_math_ops.py": "91b2fba3b83e923b29b069f699dcd415091702319595b0167b8989c5f3f161d5"
+  }
+}

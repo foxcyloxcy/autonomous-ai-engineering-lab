@@ -1,0 +1,7 @@
+{
+  "before_sha256": "a80f36c4738dd7bc3fc424ca006e08342ce9c92f722b1f3f8e1250ae0d1d367c",
+  "path": "math_ops.py",
+  "provider": "deterministic-ast-baseline",
+  "rationale": "Investigate Sub -> Add at line 2; select only on public test evidence.",
+  "replacement": "def combine(a, b):\n    return (a + b) * 2\n"
+}

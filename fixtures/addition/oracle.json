@@ -1,0 +1,1 @@
+{"schema_version":1,"function":"combine","cases":[{"args":[0,0],"expected":0},{"args":[-9,2],"expected":-7},{"args":[1.25,2.5],"expected":3.75},{"args":[1000000,-999999],"expected":1},{"args":[-3,-7],"expected":-10},{"args":[4,0],"expected":4}]}
